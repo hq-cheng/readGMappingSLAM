@@ -126,7 +126,7 @@ template <class T, class A>
 orientedpoint<T,A> absoluteDifference(const orientedpoint<T,A>& p1,const orientedpoint<T,A>& p2)
 {
 	orientedpoint<T,A> delta=p1-p2;
-	delta.theta=atan2(sin(delta.theta), cos(delta.theta));
+	delta.theta=atan2(sin(delta.theta), cos(delta.theta));  // 为什么还要这样算一遍？
 	double s=sin(p2.theta), c=cos(p2.theta);
 	return orientedpoint<T,A>(c*delta.x+s*delta.y, 
 	                         -s*delta.x+c*delta.y, delta.theta);

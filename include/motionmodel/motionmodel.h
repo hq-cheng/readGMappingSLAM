@@ -6,7 +6,7 @@
 namespace Gmapping {
 
     /**
-     * MotionModel，里程计运动模型，主要是运动模型的更新和采样
+     * MotionModel，里程计运动模型类，主要是运动模型的更新和采样
      * 数据成员：
      *      srr，线性运动造成的线性误差的方差
      *      str，旋转运动造成的线性误差的方差
